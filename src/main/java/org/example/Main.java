@@ -1,19 +1,33 @@
+//location of the current class
 package org.example;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+//when we use something built in we shall import it
+import java.util.Scanner;
+
+//definition of a class
 public class Main {
+    //main method
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        //working with the standard output - printing some text
+        System.out.println("Please enter your name");
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        //Class scanner - giving us the possibility to work with standard input (from the Console)
+        Scanner scanner = new Scanner(System.in);
+        //Creating a variable (userName) which will hold a text value
+        String userName = scanner.nextLine();
+
+        //creating standard output for printing text
+        System.out.println("Please enter your hobby?");
+
+        //Creating a variable(userHobby) which will hold a text
+        String userHobby = scanner.nextLine();
+
+        //working with the standard output - printing some text
+        System.out.printf("Please enter your age: ");
+        //Creating a variable (userName) which will hold a text value
+        int userAge = scanner.nextInt();
+
+        System.out.println("Hello, " + userName + " in our website! Now you can read more about your hobby.");
     }
 }
