@@ -13,8 +13,12 @@ public class NewString {
         System.out.println("Your age is " + firstString);
 
         //creating the second string
-        System.out.println("Write the day you were born?");
+        System.out.println("Write the day you were born (with words)?");
         String secondString = scanner.nextLine();
+
+        //creating string three
+        System.out.println("Write your hobby?");
+        String threeString = scanner.nextLine();
 
         //calculate the length of the string
         int length = firstString.length();
@@ -23,6 +27,7 @@ public class NewString {
         //Convert the string to upper case
         String uppercaseString = firstString.toUpperCase();
         System.out.println("Your age is " + firstString);
+
 
         //Replace a character in the string
         char oldChar = 'o';
@@ -33,7 +38,7 @@ public class NewString {
         //Compare the strings for content using equals
         if (firstString == secondString) {
         } else {
-            System.out.println("The strins are different");
+            System.out.println("The strings are different");
 
             //i want interval between the strings, so i will create one
             String interval = ", ";
