@@ -12,9 +12,10 @@ public class Rectangle {
         int perimeter = 2 * (length + height);
 
         //Showing the results
-        System.out.println("Rectangle with length" + length + " and height");
+        System.out.println("Rectangle with length " + length + " and height " + height);
         System.out.println("Area: " + area);
         System.out.println("Perimeter " + perimeter);
 
     }
 }
+

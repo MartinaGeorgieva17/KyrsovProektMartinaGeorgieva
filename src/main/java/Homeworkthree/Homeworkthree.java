@@ -5,22 +5,24 @@ import java.util.Scanner;
 import java.util.Scanner;
 
 public class Homeworkthree {
-    //working with standard input - printing some text
+    //working with standard input
         public static void main(String[] args) {
+//            creating class scanner - giving us the possibility to work with standard input
             Scanner scanner = new Scanner(System.in);
-
+//creating text that will appear in the console - standard output
             System.out.println("Please enter a number between 1 and 12:");
+//            creating int - it will give us the possibility to write numbers
             int monthNumber = scanner.nextInt();
-
+//creating string to indicate month name with month number
             String monthName = getMonthName(monthNumber);
-
+//creating variables if/else
             if (monthName != null) {
                 System.out.println("The corresponding month is: " + monthName);
             } else {
                 System.out.println("Invalid month number. Please enter a number between 1 and 12.");
             }
         }
-
+//creating string output - turning numbers into month names
         private static String getMonthName(int monthNumber) {
             switch (monthNumber) {
                 case 1:
