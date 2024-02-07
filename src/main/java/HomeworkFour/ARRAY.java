@@ -1,5 +1,6 @@
 package HomeworkFour;
 public class ARRAY {
+    public class ArrayWithAverageExample {
         public static void main(String[] args) {
             // Create an array with 20 elements
             int[] array = new int[20];
@@ -35,3 +36,4 @@ public class ARRAY {
             return (double) sum / array.length;
         }
     }
+}
